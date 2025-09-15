@@ -1,0 +1,411 @@
+/* Utilities */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* padding and margin */
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.py-4 {
+    padding: 4rem 0;
+}
+
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.my-4 {
+    margin: 4rem 0;
+}
+
+/* Title */
+.section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #c00a0a;
+    text-transform: uppercase;
+}
+
+.bottom-line {
+    width: 6rem;
+    height: 0.25rem;
+    background: #2c9ab6;
+    margin: 0.5rem auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Background */
+
+.bg-image {
+    opacity: 0.9;
+    background: url(../img/logo.png) no-repeat center center/cover;
+}
+
+.bg-light {
+    color: #333;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.bg-dark {
+    text-align: center;
+    color: #f4f4f4;
+    background: #333;
+}
+
+.bg-dark-light {
+    color: #ddd;
+    background: #555;
+    text-align: center;
+}
+
+.bg-light-dark {
+    color: #555;
+    background: #ddd;
+    text-align: center;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sepcial-container {
+    width: 100%;
+    height: 90%;
+}
+
+.container {
+    height: 90%;
+    width: 100%;
+}
+
+/* Navbar*/
+
+.main-nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background: #f4f4f4;
+}
+
+.main-logo {
+    width: 90px;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.header-hammer {
+    color: #c22e2e;
+    margin-left: 20px;
+}
+
+#nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 0.5rem;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #c22e2e;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+
+/* Home */
+
+/* Header Content */
+
+#Header-Content {
+    display: grid;
+    padding-bottom: 3rem;
+    height: 100vh;
+}
+
+.header-content-container {
+    height: 500px;
+    text-align: center;
+}
+
+
+.header-content-video {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #f8f8f8;
+    margin-top: 1rem;
+}
+
+.header-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #c22e2e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.header-link:hover {
+    background: #a02626;
+}
+
+/* Section B */
+#b {
+    background: #f4f4f4;
+    height: 100%;
+    padding-bottom: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 3fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 7px;
+}
+
+.first-container {
+    height: 100%;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+}
+
+.in-div-1 {
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.in-div-2 {
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.second-container {
+    height: 100%;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+}
+
+/* Contact */
+#contact {
+    color: #f4f4f4;
+    height: 100%;
+    padding-bottom: 3rem;
+}
+
+.contact-form {
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.input-name {
+    border-radius: 10px;
+    margin: 20px;
+    height: 50px;
+    width: 700px;
+    grid-column: span 3 / span 3;
+}
+
+.input-name:hover {
+    border: 2px solid #f10808;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-email {
+    border-radius: 10px;
+    margin: 20px;
+    height: 50px;
+    width: 700px;
+    grid-column: span 3 / span 3;
+    grid-column-start: 5;
+}
+
+.input-email:hover {
+    border: 2px solid #08e1f1;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-subject {
+    border-radius: 10px;
+    margin: 20px;
+    height: 50px;
+    width: 700px;
+    grid-column: span 3 / span 3;
+    grid-row-start: 2;
+}
+
+.input-subject:hover {
+    border: 2px solid #d608f1;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-phone {
+    border-radius: 10px;
+    margin: 20px;
+    height: 50px;
+    width: 700px;
+    grid-column: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+.input-phone:hover {
+    border: 2px solid #4af108;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-message {
+    border-radius: 10px;
+    margin-left: 500px;
+    height: 90px;
+    width: 983px;
+    grid-column: span 7 / span 7;
+    grid-row: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.input-message:hover {
+    border: 2px solid yellow;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-btn {
+    position: relative;
+    top: 10px;
+    left: 120px;
+    width: 150px;
+    height: 50px;
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 5;
+    margin-left: 500px;
+    padding: 0.75rem 1.5rem;
+    background: #c22e2e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+    overflow: visible;
+
+    .custom-bottom-line {
+        position: relative;
+        top: 25px;
+        right: 20px;
+    }
+}
+
+.submit-btn:hover {
+    transition: all 0.2s ease-in-out;
+
+    .custom-bottom-line {
+        width: 150px;
+        height: 3px;
+        background: #0bad6aec;
+        margin-top: 5px;
+        border-radius: 2px;
+    }
+}
+
+/* Getting Over It */
+body {
+    text-align: center;
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+#fsButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#fsButton:hover {
+    background: #0056b3;
+}
+
+
+/* Footer */
+#main-footer {
+    background: #333;
+    height: 60px;
+    color: #f4f4f4;
+    margin-top: 3rem;
+}
+
+
+i {
+    color: #f4f4f4;
+}
